@@ -1,13 +1,10 @@
-# prime number using functions
-
-#find if the number is prime or not using function 
-def prime(num): 
-    if num> 1:   
-        for n in range(2,num):   
-            if (num % n) == 0:   
-                return False 
-        return True 
-    else: 
-        return False 
-print(prime(8)) 
-print(prime(5))
+#Display all prime numbers within the range
+a=1
+b=100
+for i in range(a,b+1):
+    if i>1:
+        for j in range(2,i):
+            if i%j==0:
+                break
+        else:
+            print(i)
