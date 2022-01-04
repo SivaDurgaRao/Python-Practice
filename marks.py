@@ -1,11 +1,10 @@
-a=int(input("Enter marks:"))
-if a>=90:
-    print("A grade")
-elif a>=80 and a<90:
-    print("Grade-B")
-elif(marks>70 and marks<80):
-    print('grade-C')
-elif(marks>60 and marks<70):
-    print('grade-D')
-else:
-    print('fail')
+
+import pandas as pd
+std=pd.read_csv("A_Python/Files/Students.csv")
+
+#print(std['marks'].max())
+#print(std['marks'].min())
+#print(std['marks'].sum())
+#print(std['marks'].count())
+
+print(std[std['marks']]>=50)
