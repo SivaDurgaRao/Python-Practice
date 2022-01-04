@@ -1,15 +1,12 @@
-# Program to find Perfect Number using Functions
- 
-def Perfect_Number(Number):
-    Sum = 0
-    for i in range(1, Number):
-        if(Number % i == 0):
-            Sum = Sum + i
-    return Sum        
- 
+num = int(input("Enter a number \n"))
+sumOfFactors = 0
 
-n=int(input("Please Enter any number: "))
-if (n==Perfect_Number(n)):
-    print(n,"is a perfect number")
+#Calculating the sum of Factors
+for i in range(1,num):
+    if num%i == 0:
+        sumOfFactors += i;
+
+if sumOfFactors == num:
+    print("Perfect Number")
 else:
-    print(n,"is not a perfect number")
+    print("Not a Perfect Number")
